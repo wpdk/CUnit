@@ -29,6 +29,7 @@
  */
 
 #include <windows.h>
+#include <stdio.h>
 
 #include "Win.h"
 #include "resource.h"
