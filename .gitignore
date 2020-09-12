@@ -17,3 +17,15 @@
 *.exe
 *.pdb
 *.lib
+*.ipch
+*.tlog
+*.bsc
+*.sbr
+*.suo
+*.user
+CUnit-Memory-Dump.xml
+.vs/
+x64/
+build/
+build-tmp/
+UpgradeLog.htm
