@@ -102,6 +102,7 @@
 #    define CU_EXPORT
 #  endif
 #  ifdef _MSC_VER
+#    include <stdio.h> /* To avoid error due to snprintf macro definition */
 #    define snprintf _snprintf
 #  endif
 #else
