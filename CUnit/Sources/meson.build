@@ -33,7 +33,7 @@ test_cflags = [
 ]
 
 # build unit tests
-test_unit = executable('test_unit',
+test_unit = executable('test_cunit',
     [ 'Test/test_cunit.c', sources ],
 		c_args: [ cflags, test_cflags ],
 		include_directories: [ 'Test', includes ],
