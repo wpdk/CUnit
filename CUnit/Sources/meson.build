@@ -19,6 +19,10 @@ sources = files(
   'Win/Win.c',
 )
 
+if cc.has_argument('-Wno-unused-but-set-variable')
+  cflags += '-Wno-unused-but-set-variable'
+endif
+
 # build static lib
 static_lib = static_library('cunit',
 		sources,
