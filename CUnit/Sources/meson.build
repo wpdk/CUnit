@@ -23,6 +23,10 @@ if cc.has_argument('-Wno-unused-but-set-variable')
   cflags += '-Wno-unused-but-set-variable'
 endif
 
+if cc.has_argument('-Wno-clobbered')
+  cflags += '-Wno-clobbered'
+endif
+
 # build static lib
 static_lib = static_library('cunit',
 		sources,
