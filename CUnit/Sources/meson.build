@@ -27,6 +27,10 @@ if cc.has_argument('-Wno-clobbered')
   cflags += '-Wno-clobbered'
 endif
 
+if cc.has_argument('-Wno-format-overflow')
+  cflags += '-Wno-format-overflow'
+endif
+
 # build static lib
 static_lib = static_library('cunit',
 		sources,
